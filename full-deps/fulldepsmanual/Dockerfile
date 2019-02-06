@@ -24,10 +24,10 @@ USER $USER
 ENV SOFTDIR /software
 
 #Build p4est
-ENV P4EST_VERSION 1.1
+#-#-#ENV P4EST_VERSION 1.1
 #::AEG::Consider the use of the latest version listed in: 
 #       https://github.com/cburstedde/p4est/releases
-#ENV P4EST_VERSION 2.0
+ENV P4EST_VERSION 2.0
 
 WORKDIR $SOFTDIR
 RUN wget http://p4est.github.io/release/p4est-$P4EST_VERSION.tar.gz && \
